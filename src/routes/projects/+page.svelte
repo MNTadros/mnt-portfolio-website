@@ -6,26 +6,33 @@
         description: "A brief description of Project One.",
         tech: ["JavaScript", "Svelte"],
         repo: "/",
-        demo: "/"
-      }
-    ];
+        demo: "/",
+        icon: "src/imgs/capture.png"
+    }
+  ];
   </script>
 
   <main class="p-6">
     <section>
-      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {#each projects as project}
-          <div class="bg-white shadow-md rounded-lg p-4">
-            <h3 class="text-xl font-semibold mb-2">{project.name}</h3>
-            <p class="text-gray-700 mb-2">{project.description}</p>
-            <p class="text-sm text-gray-500 mb-4">Technologies: {project.tech.join(', ')}</p>
-            <div class="flex gap-4">
-              {#if project.repo}
-                <a href="{project.repo}" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">View Repo</a>
-              {/if}
-              {#if project.demo}
-                <a href="{project.demo}" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <div class="relative bg-orange-100 shadow-md rounded-lg p-4 flex items-center">
+            <div class="flex-1">
+              <h3 class="text-xl font-semibold mb-2 text-orange-600">{project.name}</h3>
+              <p class="text-gray-700 mb-2">{project.description}</p>
+              <p class="text-sm text-gray-500 mb-4">Technologies: {project.tech.join(', ')}</p>
+              <div class="flex gap-4">
+                {#if project.repo}
+                  <a href="{project.repo}" class="text-orange-500 hover:underline" target="_blank" rel="noopener noreferrer">View Repo</a>
+                {/if}
+                {#if project.demo}
+                  <a href="{project.demo}" class="text-orange-500 hover:underline" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                {/if}
+              </div>
+            </div>
+            <div class="absolute right-0 top-0 bottom-0 flex items-center justify-center w-1/4 rounded-lg">
+              {#if project.icon}
+                <img src="{project.icon}" alt="{project.name} icon" class="h-full object-cover" />
               {/if}
             </div>
           </div>
