@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+      font-size: 13px;
+      scroll-behavior: smooth;
+      overflow: overlay;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: rgb(255, 183, 50);
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 166, 0, 0.2);
+      }
+}
