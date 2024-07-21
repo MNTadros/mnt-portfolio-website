@@ -5,6 +5,7 @@
         { name: "who", href: "/who" },
         { name: "projects", href: "/projects" },
         { name: "resume", href: "/resume" },
+        { name: "faq", href: "/faq" }
     ];
 
     let page_title = null;
@@ -21,7 +22,10 @@
 <header class="sticky top-0 z-50 bg-background backdrop-blur-2xl" data-sveltekit-noscroll>
     <div class="layout-md py-1 flex justify-between items-center border-b border-neutral-300 dark:border-neutral-700 ">
         <bi class="pl-4 my-2 text-xl sm:text-2xl font-mono italic font-bold text-[105%] leading-[100%] text-black dark:text-white">
+            <!-- <span class ="flex justify-normal space-x-4"> -->
+            <!-- <img src="src/imgs/favicon.png" alt="logo pic" width="28" height="18"> -->
             <a href="/">Mina Tadros</a>
+            <!-- </span> -->
             {#if page_title}
                 <span class="font-normal text-neutral-800 dark:text-neutral-200">
                     <span class="text-neutral-500 hidden sm:inline">—</span>
