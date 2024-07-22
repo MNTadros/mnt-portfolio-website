@@ -1,15 +1,35 @@
 <script>
     let faqs = [
   {
-    category: "Interests",
-    question: "What are your main interests?",
+    category: "Personal Life",
+    question: "What are your interests?",
     answer: "I’m interested in technology, reading, and traveling."
   },
   {
-    category: "Family",
-    question: "Do you have siblings?",
-    answer: "Yes, I have one older brother and one older sister."
-  }
+    category: "Personal Life",
+    question: "What motivates you?",
+    answer: "Creating! Whenever I think of something interesting it motivates me to have the skills to build it."
+  },
+  {
+    category: "Personal Life",
+    question: "What are your long term goals?",
+    answer: "I would love to work on the software part of drones or cars."
+  },
+  {
+    category: "Programming",
+    question: "Favorite language?",
+    answer: "I love Java but I have been currently leaning a bit more towards Kotlin."
+  },
+  {
+    category: "Programming",
+    question: "Favorite Project?",
+    answer: "My favorite project is probably my most recent one which I am working on, its an educational app called PreEng!"
+  },
+  {
+    category: "Programming",
+    question: "What programming languages are you proficient in??",
+    answer: "I have used Java for robotics, minecraft plugins & modding aswell for many small projects, so I would have to answer"
+  },
 ];
 
 function groupByCategory(faqs) {
