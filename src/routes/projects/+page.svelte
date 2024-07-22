@@ -5,6 +5,7 @@
         name: "Project One",
         description: "A brief description of Project One.",
         tech: ["JavaScript", "Svelte"],
+        tag: "TAG",
         repo: "/",
         demo: "/",
         icon: "src/imgs/capture.png"
@@ -18,7 +19,12 @@
         {#each projects as project}
           <div class="relative bg-orange-100 shadow-md rounded-lg p-4 flex items-center">
             <div class="flex-1">
-              <h3 class="text-xl font-semibold mb-2 text-orange-600">{project.name}</h3>
+              <h3 class="text-xl font-semibold mb-2 text-orange-600">
+                {project.name}
+                <span class="text-sm font-medium text-white bg-orange-400 rounded-full px-2 py-1 ml-2">
+                  {project.tag}
+                </span>
+              </h3>
               <p class="text-gray-700 mb-2">{project.description}</p>
               <p class="text-sm text-gray-500 mb-4">Technologies: {project.tech.join(', ')}</p>
               <div class="flex gap-4">
@@ -40,5 +46,4 @@
       </div>
     </section>
   </main>
-  
   
