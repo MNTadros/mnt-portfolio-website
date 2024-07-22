@@ -8,7 +8,7 @@
         tag: "TAG",
         repo: "/",
         demo: "/",
-        icon: "src/imgs/capture.png"
+        icon: "src/lib/imgs/capture.png"
     }
   ];
   </script>
