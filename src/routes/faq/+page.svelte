@@ -12,8 +12,8 @@
   },
   {
     category: "Programming",
-    question: "What programming languages are you proficient in??",
-    answer: "I have used Java for robotics, minecraft plugins & modding aswell for many small projects, so I would have to answer"
+    question: "What programming language are you most proficient in??",
+    answer: "I have used Java for robotics, minecraft plugins & modding aswell for many small projects, so I would have to answer Java!"
   },
   {
     category: "Personal Life",
