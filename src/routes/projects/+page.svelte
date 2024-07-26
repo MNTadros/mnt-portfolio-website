@@ -2,20 +2,38 @@
     // Sample data for projects
     let projects = [
       {
-        name: "Project One",
-        description: "A brief description of Project One.",
-        tech: ["JavaScript", "Svelte"],
-        tag: "TAG",
-        repo: "/",
+        name: "Portfolio Website",
+        description: "This website you are viewing right now!",
+        tech: ["JavaScript", "Svelte","HTML","Tailwind"],
+        tag: "JavaScript",
+        repo: "https://github.com/MNTadros/mnt-portfolio-website",
         demo: "/",
-        icon: "src/lib/imgs/capture.png"
+        icon: "src/lib/imgs/MNT_Icon.png"
+    },
+    {
+        name: "Botics",
+        description: "A Minecraft Mod focused on Robotics!",
+        tech: ["Java", "Gradle"],
+        tag: "Java",
+        repo: "https://github.com/MNTadros/Botics",
+        demo: "/",
+        icon: "src/lib/imgs/Botics_Icon.png"
+    },
+    {
+        name: "ItemExchanger",
+        description: "A Minecraft plugin made to exchange items within a server.",
+        tech: ["Java", "Maven"],
+        tag: "Java",
+        repo: "https://github.com/MNTadros/ItemExchanger",
+        demo: "/",
+        icon: "src/lib/imgs/ItemExchanger_Icon.png"
     }
   ];
   </script>
 
   <main class="p-6">
     <section>
-      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
         {#each projects as project}
           <div class="relative bg-orange-100 shadow-md rounded-lg p-4 flex items-center">
             <div class="flex-1">
@@ -36,9 +54,9 @@
                 {/if}
               </div>
             </div>
-            <div class="absolute right-0 top-0 bottom-0 flex items-center justify-center w-1/4 rounded-lg">
+            <div class="absolute right-0 top-0 bottom-0 flex items-center justify-center w-1/5 rounded-lg">
               {#if project.icon}
-                <img src="{project.icon}" alt="{project.name} icon" class="h-full object-cover" />
+                <img src="{project.icon}" alt="{project.name} icon" class="h-full object-cover w-48 border-orange-400 border-2" />
               {/if}
             </div>
           </div>
